@@ -1,8 +1,11 @@
 ﻿using LanguageExt;
-using static LanguageExt.Prelude;
 
-Either<string, string> result = Right("Hello World");
-result.Match(
-    Right: msg => Console.WriteLine($"Success: {msg}"),
-    Left: err => Console.WriteLine($"Error: {err}")
+Either<Success, Error> result = new Success("Hello World");
+var message = result.Match(
+    Left: msg => $"Success: {msg}",
+    Right: err => $"Error: {err}"
 );
+Console.WriteLine(message);
+
+public record Success(string Message);
+public record Error(string Message);
