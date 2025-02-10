@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using LanguageExt;
+using static LanguageExt.Prelude;
+
+Either<string, string> result = Right("Hello World");
+result.Match(
+    Right: msg => Console.WriteLine($"Success: {msg}"),
+    Left: err => Console.WriteLine($"Error: {err}")
+);
