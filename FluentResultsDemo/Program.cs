@@ -1,11 +1,10 @@
 ﻿using FluentResults;
 
 Result<string> result = Result.Ok("Hello World");
-Console.WriteLine(result.IsSuccess
-    ? $"Success: {result.Value}"
-    : $"Error: {string.Join(", ", result.Errors)}");
+Result failureResult = Result.Fail("Something went wrong");
 
-//// Future C# (hypothetical)
-//union Result { Success; Error; }
-//Result result = new Success("Done");
-//var output = result switch { Success s => s.Message, Error e => e.Details };
+var message = result.IsSuccess
+    ? $"Success: {result.Value}"
+    : $"Error: {string.Join(", ", result.Errors)}";
+
+Console.WriteLine(message);

@@ -1,11 +1,10 @@
 ﻿using CSharpFunctionalExtensions;
 
 Result<string> result = Result.Success("Hello World");
-Console.WriteLine(result.IsSuccess
-    ? $"Success: {result.Value}"
-    : $"Error: {result.Error}");
+Result<string> failureResult = Result.Failure<string>("Something went wrong");
 
-//// Future C# (hypothetical)
-//union Result { Success; Error; }
-//Result result = new Success("Done");
-//var output = result switch { Success s => s.Message, Error e => e.Details };
+string message = result.IsSuccess
+    ? $"Success: {result.Value}"
+    : $"Error: {result.Error}";
+
+Console.WriteLine(message);
