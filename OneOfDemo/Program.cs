@@ -5,7 +5,7 @@
 OneOf<Success, Error> result = OneOf<Success, Error>.FromT0(new Success("Hello World"));
 OneOf<Success, Error> failureResult = OneOf<Success, Error>.FromT1(new Error("Something went wrong"));
 
-string message = failureResult.Match(
+string message = result.Match(
     success => $"Success: {success.Message}",
     error => $"Error: {error.Message}"
 );
