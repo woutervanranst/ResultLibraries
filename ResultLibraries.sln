@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-FluentResultsDemo", "FluentResultsDemo\C-FluentResultsDemo.csproj", "{72E8E401-204B-4D72-8C09-F4606C5D20FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A-FluentResultsDemo", "FluentResultsDemo\A-FluentResultsDemo.csproj", "{72E8E401-204B-4D72-8C09-F4606C5D20FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D-CSharpFunctionalExtensionsDemo", "CSharpFunctionalExtensionsDemo\D-CSharpFunctionalExtensionsDemo.csproj", "{1E2683D6-46E0-4647-8EDE-A46823E73A7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B-CSharpFunctionalExtensionsDemo", "CSharpFunctionalExtensionsDemo\B-CSharpFunctionalExtensionsDemo.csproj", "{1E2683D6-46E0-4647-8EDE-A46823E73A7F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B-LanguageExtDemo", "LanguageExtDemo\B-LanguageExtDemo.csproj", "{C9321DEC-F84D-4586-A8C6-96D085719762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D-LanguageExtDemo", "LanguageExtDemo\D-LanguageExtDemo.csproj", "{C9321DEC-F84D-4586-A8C6-96D085719762}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A-OneOfDemo", "OneOfDemo\A-OneOfDemo.csproj", "{1D5DB500-C1FC-4305-8616-17B63EFE760B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-OneOfDemo", "OneOfDemo\C-OneOfDemo.csproj", "{1D5DB500-C1FC-4305-8616-17B63EFE760B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
